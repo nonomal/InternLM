@@ -2,31 +2,31 @@
 
 <div align="center">
 
-<img src="./assets/logo.svg" width="200"/>
-  <div> </div>
+<img src="./assets//logo.svg" width="200"/>
+  <div>&nbsp;</div>
   <div align="center">
-    <b><font size="5">InternLM</font></b>
+    <b><font size="5">书生·浦语 官网</font></b>
     <sup>
       <a href="https://internlm.intern-ai.org.cn/">
         <i><font size="4">HOT</font></i>
       </a>
     </sup>
-    <div> </div>
+    <div>&nbsp;</div>
   </div>
 
-[![license](./assets/license.svg)](./LICENSE)
-[![evaluation](./assets/compass_support.svg)](https://github.com/internLM/OpenCompass/)
+[![license](./assets//license.svg)](https://github.com/open-mmlab/mmdetection/blob/main/LICENSE)
+[![evaluation](./assets//compass_support.svg)](https://github.com/internLM/OpenCompass/)
 
 <!-- [![Documentation Status](https://readthedocs.org/projects/internlm/badge/?version=latest)](https://internlm.readthedocs.io/zh_CN/latest/?badge=latest) -->
 
-[📘Commercial Application](#license) |
+[📘商业授权](#开源许可证) |
 [🤗HuggingFace](https://huggingface.co/internlm) |
-[🆕Update News](#news) |
-[🤔Reporting Issues](https://github.com/InternLM/InternLM/issues/new) |
-[📜Technical Report](https://arxiv.org/abs/2403.17297)<br>
-[💬Chat Web](https://internlm-chat.intern-ai.org.cn/) |
+[🆕最新消息](#更新) |
+[🤔提交反馈](https://github.com/InternLM/InternLM/issues/new)|
+[📜技术报告](https://arxiv.org/abs/2403.17297)<br>
+[💬聊天应用](https://internlm-chat.intern-ai.org.cn/) |
 [🔗API](https://internlm.intern-ai.org.cn/api/document) |
-[🧩Modelers](https://modelers.cn/spaces/MindSpore-Lab/INTERNLM2-20B-PLAN)
+[🧩魔乐社区](https://modelers.cn/spaces/MindSpore-Lab/INTERNLM2-20B-PLAN)
 
 [English](./README.md) |
 [简体中文](./README_zh-CN.md)
@@ -34,39 +34,39 @@
 </div>
 
 <p align="center">
-    👋 join us on <a href="https://discord.gg/xa29JuW87d" target="_blank">Discord</a> and <a href="https://github.com/InternLM/InternLM/assets/25839884/a6aad896-7232-4220-ac84-9e070c2633ce" target="_blank">WeChat</a>
+    👋 加入我们的 <a href="https://discord.gg/xa29JuW87d" target="_blank">Discord</a> 和 <a href="https://github.com/InternLM/InternLM/assets/25839884/a6aad896-7232-4220-ac84-9e070c2633ce" target="_blank">微信社区</a>
 </p>
 
-## Introduction
+## 简介
 
-InternLM3 has open-sourced an 8-billion parameter instruction model, InternLM3-8B-Instruct, designed for general-purpose usage and advanced reasoning. This model has the following characteristics:
+InternLM3，即书生·浦语大模型第3代，开源了80亿参数，面向通用使用与高阶推理的指令模型（InternLM3-8B-Instruct）。模型具备以下特点：
 
-- **Enhanced performance at reduced cost**:
-  State-of-the-art performance on reasoning and knowledge-intensive tasks surpass models like Llama3.1-8B and Qwen2.5-7B. Remarkably, InternLM3 is trained on only 4 trillion high-quality tokens, saving more than 75% of the training cost compared to other LLMs of similar scale.
-- **Deep thinking capability**:
-  InternLM3 supports both the deep thinking mode for solving complicated reasoning tasks via the long chain-of-thought and the normal response mode for fluent user interactions.
+- **更低的代价取得更高的性能**:
+  在推理、知识类任务上取得同量级最优性能，超过Llama3.1-8B和Qwen2.5-7B。值得关注的是InternLM3只用了4万亿词元进行训练，对比同级别模型训练成本节省75%以上。
+- **深度思考能力**:
+  InternLM3支持通过长思维链求解复杂推理任务的深度思考模式，同时还兼顾了用户体验更流畅的通用回复模式。
 
-## News
+## 更新
 
-\[2025.01.15\] We release InternLM3-8B-Instruct, See [model zoo below](#model-zoo) for download or [model cards](./model_cards/) for more details.
+\[2025.01.15\] 我们发布了 InternLM3-8B-Instruct 模型。可以在下方的 [模型库](#model-zoo) 进行下载，或者在 [model cards](./model_cards/) 中了解更多细节。
 
-\[2024.08.01\] We release InternLM2.5-1.8B, InternLM2.5-1.8B-Chat, InternLM2.5-20B and InternLM2.5-20B-Chat. See [model zoo below](#model-zoo) for download or [model cards](./model_cards/) for more details.
+\[2024.08.01\] 我们发布了 InternLM2.5-1.8B、InternLM2.5-1.8B-Chat、InternLM2.5-20B 和 InternLM2.5-20B-Chat。可以在下方的 [模型库](#model-zoo) 进行下载，或者在 [model cards](./model_cards/) 中了解更多细节。
 
-\[2024.07.19\] We release the InternLM2-Reward series of reward models in 1.8B, 7B and 20B sizes. See [model zoo below](#model-zoo) for download or [model cards](./model_cards/internlm2_reward.md) for more details.
+\[2024.07.19\] 我们发布了 1.8B、7B 和 20B 大小的 InternLM2-Reward 系列奖励模型。可以在下方的 [模型库](#model-zoo) 进行下载，或者在 [model cards](./model_cards/internlm2_reward.md) 中了解更多细节。
 
-\[2024.07.03\] We release InternLM2.5-7B, InternLM2.5-7B-Chat and InternLM2.5-7B-Chat-1M. See [model zoo below](#model-zoo) for download or [model cards](./model_cards/) for more details.
+\[2024.06.30\] 我们发布了 InternLM2.5-7B、InternLM2.5-7B-Chat 和 InternLM2.5-7B-Chat-1M。可以在下方的 [模型库](#model-zoo) 进行下载，或者在 [model cards](./model_cards/) 中了解更多细节。
 
-\[2024.03.26\] We release InternLM2 technical report. See [arXiv](https://arxiv.org/abs/2403.17297) for details.
+\[2024.03.26\] 我们发布了 InternLM2 的技术报告。 可以点击 [arXiv链接](https://arxiv.org/abs/2403.17297) 来了解更多细节。
 
-\[2024.01.31\] We release InternLM2-1.8B, along with the associated chat model. They provide a cheaper deployment option while maintaining leading performance.
+\[2024.01.31\] 我们发布了 InternLM2-1.8B，以及相关的对话模型。该模型在保持领先性能的情况下，提供了更低廉的部署方案。
 
-\[2024.01.23\] We release InternLM2-Math-7B and InternLM2-Math-20B with pretraining and SFT checkpoints. They surpass ChatGPT with small sizes. See [InternLM-Math](https://github.com/InternLM/internlm-math) for details and download.
+\[2024.01.23\] 我们发布了 InternLM2-Math-7B 和 InternLM2-Math-20B 以及相关的对话模型。InternLM-Math以较小的尺寸超过了ChatGPT的表现。可以点击[InternLM-Math](https://github.com/InternLM/internlm-math)进行下载，并了解详情。
 
-\[2024.01.17\] We release InternLM2-7B and InternLM2-20B and their corresponding chat models with stronger capabilities in all dimensions. See [model zoo below](#model-zoo) for download or [model cards](./model_cards/) for more details.
+\[2024.01.17\] 我们发布了 InternLM2-7B 和 InternLM2-20B 以及相关的对话模型，InternLM2 在数理、代码、对话、创作等各方面能力都获得了长足进步，综合性能达到开源模型的领先水平。可以点击[下面的模型库](#model-zoo)进行下载或者[查看模型文档](./model_cards/)来了解更多细节.
 
-\[2023.12.13\] InternLM-7B-Chat and InternLM-20B-Chat checkpoints are updated. With an improved finetuning strategy, the new chat models can generate higher quality responses with greater stylistic diversity.
+\[2023.12.13\] 我们更新了 InternLM-7B-Chat 和 InternLM-20B-Chat 模型权重。通过改进微调数据和训练策略，新版对话模型生成的回复质量更高、语言风格更加多元。
 
-\[2023.09.20\] InternLM-20B is released with base and chat versions.
+\[2023.09.20\] InternLM-20B 已发布，包括基础版和对话版。
 
 ## Model Zoo
 
@@ -84,24 +84,24 @@ InternLM3 has open-sourced an 8-billion parameter instruction model, InternLM3-8
 | Model                      | Transformers(HF)                           | ModelScope(HF)                           | OpenXLab(HF)                           | OpenXLab(Origin)                           | Release Date |
 | -------------------------- | ------------------------------------------ | ---------------------------------------- | -------------------------------------- | ------------------------------------------ | ------------ |
 | **InternLM2.5-1.8B**       | [🤗internlm2_5-1_8b](https://huggingface.co/internlm/internlm2_5-1_8b) | [<img src="./assets/modelscope_logo.png" width="20px" /> internlm2_5-1_8b](https://modelscope.cn/models/Shanghai_AI_Laboratory/internlm2_5-1_8b/summary) | [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/header/openxlab_models.svg)](https://openxlab.org.cn/models/detail/OpenLMLab/internlm2_5-1_8b) | [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/header/openxlab_models.svg)](https://openxlab.org.cn/models/detail/OpenLMLab/internlm2_5-1_8b-original) | 2024-08-05   |
-| **InternLM2.5-1.8B-Chat**  | [🤗internlm2_5-1_8b-chat](https://huggingface.co/internlm/internlm2_5-1_8b-chat) | [<img src="./assets/modelscope_logo.png" width="20px" /> internlm2_5-1_8b-chat](https://modelscope.cn/models/Shanghai_AI_Laboratory/internlm2_5-1_8b-chat/summary) | [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/header/openxlab_models.svg)](https://openxlab.org.cn/models/detail/OpenLMLab/internlm2_5-1_8b-chat) | [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/header/openxlab_models.svg)](https://openxlab.org.cn/models/detail/OpenLMLab/internlm2_5-1_8b-chat-original) | 2024-08-05   |
+| **InternLM2.5-1.8B-Chat**  | [🤗internlm2_5-1_8b-chat](https://huggingface.co/internlm/internlm2_5-1_8b-chat) | [<img src="./assets/modelscope_logo.png" width="20px" /> internlm2_5-1_8b](https://modelscope.cn/models/Shanghai_AI_Laboratory/internlm2_5-1_8b-chat/summary) | [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/header/openxlab_models.svg)](https://openxlab.org.cn/models/detail/OpenLMLab/internlm2_5-1_8b-chat) | [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/header/openxlab_models.svg)](https://openxlab.org.cn/models/detail/OpenLMLab/internlm2_5-1_8b-chat-original) | 2024-08-05   |
 | **InternLM2.5-7B**         | [🤗internlm2_5-7b](https://huggingface.co/internlm/internlm2_5-7b) | [<img src="./assets/modelscope_logo.png" width="20px" /> internlm2_5-7b](https://modelscope.cn/models/Shanghai_AI_Laboratory/internlm2_5-7b/summary) | [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/header/openxlab_models.svg)](https://openxlab.org.cn/models/detail/OpenLMLab/internlm2_5-7b) | [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/header/openxlab_models.svg)](https://openxlab.org.cn/models/detail/OpenLMLab/internlm2_5-7b-original) | 2024-07-03   |
 | **InternLM2.5-7B-Chat**    | [🤗internlm2_5-7b-chat](https://huggingface.co/internlm/internlm2_5-7b-chat) | [<img src="./assets/modelscope_logo.png" width="20px" /> internlm2_5-7b-chat](https://modelscope.cn/models/Shanghai_AI_Laboratory/internlm2_5-7b-chat/summary) | [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/header/openxlab_models.svg)](https://openxlab.org.cn/models/detail/OpenLMLab/internlm2_5-7b-chat) | [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/header/openxlab_models.svg)](https://openxlab.org.cn/models/detail/OpenLMLab/internlm2_5-7b-chat-original) | 2024-07-03   |
 | **InternLM2.5-7B-Chat-1M** | [🤗internlm2_5-7b-chat-1m](https://huggingface.co/internlm/internlm2_5-7b-chat-1m) | [<img src="./assets/modelscope_logo.png" width="20px" /> internlm2_5-7b-chat-1m](https://modelscope.cn/models/Shanghai_AI_Laboratory/internlm2_5-7b-chat-1m/summary) | [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/header/openxlab_models.svg)](https://openxlab.org.cn/models/detail/OpenLMLab/internlm2_5-7b-chat-1m) | [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/header/openxlab_models.svg)](https://openxlab.org.cn/models/detail/OpenLMLab/internlm2_5-7b-chat-1m-original) | 2024-07-03   |
 | **InternLM2.5-20B**        | [🤗internlm2_5-20b](https://huggingface.co/internlm/internlm2_5-20b) | [<img src="./assets/modelscope_logo.png" width="20px" /> internlm2_5-20b](https://modelscope.cn/models/Shanghai_AI_Laboratory/internlm2_5-20b/summary) | [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/header/openxlab_models.svg)](https://openxlab.org.cn/models/detail/OpenLMLab/internlm2_5-20b) | [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/header/openxlab_models.svg)](https://openxlab.org.cn/models/detail/OpenLMLab/internlm2_5-20b-original) | 2024-08-05   |
-| **InternLM2.5-20B-Chat**   | [🤗internlm2_5-20b-chat](https://huggingface.co/internlm/internlm2_5-20b-chat) | [<img src="./assets/modelscope_logo.png" width="20px" /> internlm2_5-20b-chat](https://modelscope.cn/models/Shanghai_AI_Laboratory/internlm2_5-20b-chat/summary) | [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/header/openxlab_models.svg)](https://openxlab.org.cn/models/detail/OpenLMLab/internlm2_5-20b-chat) | [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/header/openxlab_models.svg)](https://openxlab.org.cn/models/detail/OpenLMLab/internlm2_5-20b-chat-original) | 2024-08-05   |
+| **InternLM2.5-20B-Chat**   | [🤗internlm2_5-20b-chat](https://huggingface.co/internlm/internlm2_5-20b-chat) | [<img src="./assets/modelscope_logo.png" width="20px" /> internlm2_5-20b](https://modelscope.cn/models/Shanghai_AI_Laboratory/internlm2_5-20b-chat/summary) | [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/header/openxlab_models.svg)](https://openxlab.org.cn/models/detail/OpenLMLab/internlm2_5-20b-chat) | [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/header/openxlab_models.svg)](https://openxlab.org.cn/models/detail/OpenLMLab/internlm2_5-20b-chat-original) | 2024-08-05   |
 
-**Notes:**
+**模型说明：**
 
-The release of InternLM2.5 series contains 1.8B, 7B, and 20B versions. 7B models are efficient for research and application and 20B models are more powerful and can support more complex scenarios. The relation of these models are shown as follows.
+目前 InternLM 2.5 系列发布了 1.8B、7B 和 20B 大小的模型。7B 为轻量级的研究和应用提供了一个轻便但性能不俗的模型，20B 模型的综合性能更为强劲，可以有效支持更加复杂的实用场景。每个规格不同模型关系如下所示：
 
-1. **InternLM2.5**: Foundation models pre-trained on large-scale corpus. InternLM2.5 models are recommended for consideration in most applications.
-2. **InternLM2.5-Chat**: The Chat model that undergoes supervised fine-tuning (SFT) and reinforcement learning from human feedback (RLHF), based on the InternLM2.5 model. InternLM2.5-Chat is optimized for instruction following, chat experience, and function call, which is recommended for downstream applications.
-3. **InternLM2.5-Chat-1M**: InternLM2.5-Chat-1M supports 1M long-context with compatible performance as InternLM2.5-Chat.
+1. **InternLM2.5**：经历了大规模预训练的基座模型，是我们推荐的在大部分应用中考虑选用的优秀基座。
+2. **InternLM2.5-Chat**: 对话模型，在 InternLM2.5 基座上经历了有监督微调和 online RLHF。InternLM2.5-Chat 面向对话交互进行了优化，具有较好的指令遵循、共情聊天和调用工具等的能力，是我们推荐直接用于下游应用的模型。
+3. **InternLM2.5-Chat-1M**: InternLM2.5-Chat-1M 支持一百万字超长上下文，并具有和 InternLM2.5-Chat 相当的综合性能表现。
 
-**Limitations:** Although we have made efforts to ensure the safety of the model during the training process and to encourage the model to generate text that complies with ethical and legal requirements, the model may still produce unexpected outputs due to its size and probabilistic generation paradigm. For example, the generated responses may contain biases, discrimination, or other harmful content. Please do not propagate such content. We are not responsible for any consequences resulting from the dissemination of harmful information.
+**局限性：** 尽管在训练过程中我们非常注重模型的安全性，尽力促使模型输出符合伦理和法律要求的文本，但受限于模型大小以及概率生成范式，模型可能会产生各种不符合预期的输出，例如回复内容包含偏见、歧视等有害内容，请勿传播这些内容。由于传播不良信息导致的任何后果，本项目不承担责任。
 
-**Supplements:** `HF` refers to the format used by HuggingFace in [transformers](https://github.com/huggingface/transformers), whereas `Origin` denotes the format adopted by the InternLM team in [InternEvo](https://github.com/InternLM/InternEvo).
+**补充说明：** 上表中的 `HF` 表示对应模型为 HuggingFace 平台提供的 [transformers](https://github.com/huggingface/transformers) 框架格式；`Origin` 则表示对应模型为我们 InternLM 团队的 [InternEvo](https://github.com/InternLM/InternEvo) 框架格式。
 
 </details>
 
@@ -110,7 +110,7 @@ The release of InternLM2.5 series contains 1.8B, 7B, and 20B versions. 7B models
 <details>
     <summary>(click to expand)</summary>
 
-InternLM2-Reward is a series of reward models, trained on 2.4 million preference samples, available in 1.8B, 7B, and 20B sizes. These model were applied to the PPO training process of our chat models. See [model cards](./model_cards/internlm2_reward.md) for more details.
+InternLM2-Reward 是基于 240 万个偏好样本进行训练的奖励模型，有 1.8B、7B 和 20B 大小可供选择。这些模型被用于 InternLM 对话模型的 PPO 训练过程。请参考 [model cards](./model_cards/internlm2_reward.md) 了解更多细节。
 
 | Model                     | RewardBench Score | Transformers(HF)                                   | ModelScope(HF)                                    | OpenXLab(HF)                                    | Release Date |
 | ------------------------- | ----------------- | -------------------------------------------------- | ------------------------------------------------- | ----------------------------------------------- | ------------ |
@@ -125,7 +125,7 @@ InternLM2-Reward is a series of reward models, trained on 2.4 million preference
 <details>
     <summary>(click to expand)</summary>
 
-Our previous generation models with advanced capabilities in long-context processing, reasoning, and coding. See [model cards](./model_cards/) for more details.
+我们上一代的模型，在长上下文处理、推理和编码方面具有优秀的性能。请参考 [model cards](./model_cards/) 了解更多细节。
 
 | Model                       | Transformers(HF)                          | ModelScope(HF)                           | OpenXLab(HF)                           | OpenXLab(Origin)                           | Release Date |
 | --------------------------- | ----------------------------------------- | ---------------------------------------- | -------------------------------------- | ------------------------------------------ | ------------ |
@@ -143,11 +143,11 @@ Our previous generation models with advanced capabilities in long-context proces
 
 </details>
 
-## Performance
+## 性能
 
-We conducted a comprehensive evaluation of InternLM using the open-source evaluation tool [OpenCompass](https://github.com/internLM/OpenCompass/). The evaluation covered five dimensions of capabilities: disciplinary competence, language competence, knowledge competence, inference competence, and comprehension competence. Here are some of the evaluation results, and you can visit the [OpenCompass leaderboard](https://rank.opencompass.org.cn) for more evaluation results.
+我们使用开源评测工具 [OpenCompass](https://github.com/internLM/OpenCompass/) 从学科综合能力、语言能力、知识能力、推理能力、理解能力五大能力维度对InternLM开展全面评测，部分评测结果如下表所示，欢迎访问[ OpenCompass 榜单 ](https://rank.opencompass.org.cn)获取更多的评测结果。
 
-| Benchmark    |                                 | InternLM3-8B-Instruct | Qwen2.5-7B-Instruct | Llama3.1-8B-Instruct | GPT-4o-mini(close source) |
+| 评测集\\模型 |                                 | InternLM3-8B-Instruct | Qwen2.5-7B-Instruct | Llama3.1-8B-Instruct | GPT-4o-mini(close source) |
 | ------------ | ------------------------------- | --------------------- | ------------------- | -------------------- | ------------------------- |
 | General      | CMMLU(0-shot)                   | **83.1**              | 75.8                | 53.9                 | 66.0                      |
 |              | MMLU(0-shot)                    | 76.6                  | **76.8**            | 71.8                 | 82.7                      |
@@ -161,28 +161,29 @@ We conducted a comprehensive evaluation of InternLM using the open-source evalua
 | Coding       | LiveCodeBench(2407-2409 Pass@1) | **17.8**              | 16.8                | 12.9                 | 21.8                      |
 |              | HumanEval(Pass@1)               | 82.3                  | **85.4**            | 72.0                 | 86.6                      |
 | Instrunction | IFEval(Prompt-Strict)           | **79.3**              | 71.7                | 75.2                 | 79.7                      |
-| Long Context | RULER(4-128K Average)           | 87.9                  | 81.4                | **88.5**             | 90.7                      |
+| LongContext  | RULER(4-128K Average)           | 87.9                  | 81.4                | **88.5**             | 90.7                      |
 | Chat         | AlpacaEval 2.0(LC WinRate)      | **51.1**              | 30.3                | 25.0                 | 50.7                      |
 |              | WildBench(Raw Score)            | **33.1**              | 23.3                | 1.5                  | 40.3                      |
 |              | MT-Bench-101(Score 1-10)        | **8.59**              | 8.49                | 8.37                 | 8.87                      |
 
-- The evaluation results were obtained from [OpenCompass](https://github.com/internLM/OpenCompass/) (some data marked with \*, which means evaluating with Thinking Mode), and evaluation configuration can be found in the configuration files provided by [OpenCompass](https://github.com/internLM/OpenCompass/).
-- The evaluation data may have numerical differences due to the version iteration of [OpenCompass](https://github.com/internLM/OpenCompass/), so please refer to the latest evaluation results of [OpenCompass](https://github.com/internLM/OpenCompass/).
-  **Limitations:** Although we have made efforts to ensure the safety of the model during the training process and to encourage the model to generate text that complies with ethical and legal requirements, the model may still produce unexpected outputs due to its size and probabilistic generation paradigm. For example, the generated responses may contain biases, discrimination, or other harmful content. Please do not propagate such content. We are not responsible for any consequences resulting from the dissemination of harmful information.
+- 以上评测结果基于 [OpenCompass](https://github.com/internLM/OpenCompass/) 获得(部分数据标注`*`代表使用深度思考模式进行评测)，具体测试细节可参见 [OpenCompass](https://github.com/internLM/OpenCompass/) 中提供的配置文件。
+- 评测数据会因 [OpenCompass](https://github.com/internLM/OpenCompass/) 的版本迭代而存在数值差异，请以 [OpenCompass](https://github.com/internLM/OpenCompass/) 最新版的评测结果为主。
 
-### Requirements
+**局限性：** 尽管在训练过程中我们非常注重模型的安全性，尽力促使模型输出符合伦理和法律要求的文本，但受限于模型大小以及概率生成范式，模型可能会产生各种不符合预期的输出，例如回复内容包含偏见、歧视等有害内容，请勿传播这些内容。由于传播不良信息导致的任何后果，本项目不承担责任。
+
+### 依赖
 
 - Python >= 3.8
-- PyTorch >= 1.12.0 (2.0.0 and above are recommended)
+- PyTorch >= 1.12.0 (推荐 2.0.0 和更高版本)
 - Transformers >= 4.38
 
-## Usages
+## 使用案例
 
-### Conversation Mode
+### 常规对话模式
 
-#### Transformers inference
+#### Transformers 推理
 
-To load the InternLM3 8B Instruct model using Transformers, use the following code:
+通过以下的代码加载  InternLM3 8B Instruct 模型
 
 ```python
 import torch
@@ -215,31 +216,31 @@ response = tokenizer.batch_decode(generated_ids)[0]
 print(response)
 ```
 
-#### LMDeploy inference
+#### LMDeploy 推理
 
-LMDeploy is a toolkit for compressing, deploying, and serving LLM, developed by the MMRazor and MMDeploy teams.
+LMDeploy 是涵盖了 LLM 任务的全套轻量化、部署和服务解决方案。
 
 ```bash
 pip install lmdeploy
 ```
 
-You can run batch inference locally with the following python code:
+你可以使用以下 python 代码进行本地批量推理:
 
 ```python
 import lmdeploy
 model_dir = "internlm/internlm3-8b-instruct"
 pipe = lmdeploy.pipeline(model_dir)
-response = pipe("Please tell me five scenic spots in Shanghai")
+response = pipe(["Please tell me five scenic spots in Shanghai"])
 print(response)
 ```
 
-Or you can launch an OpenAI compatible server with the following command:
+或者你可以使用以下命令启动兼容 OpenAI API 的服务:
 
 ```bash
 lmdeploy serve api_server internlm/internlm3-8b-instruct --model-name internlm3-8b-instruct --server-port 23333
 ```
 
-Then you can send a chat request to the server:
+然后你可以向服务端发起一个聊天请求:
 
 ```bash
 curl http://localhost:23333/v1/chat/completions \
@@ -247,61 +248,27 @@ curl http://localhost:23333/v1/chat/completions \
     -d '{
     "model": "internlm3-8b-instruct",
     "messages": [
-    {"role": "user", "content": "Please tell me five scenic spots in Shanghai"}
+    {"role": "user", "content": "介绍一下深度学习。"}
     ]
     }'
 ```
 
-Find more details in the [LMDeploy documentation](https://lmdeploy.readthedocs.io/en/latest/)
+更多信息请查看 [LMDeploy 文档](https://lmdeploy.readthedocs.io/en/latest/)
 
-#### SGLang inference
+#### Ollama 推理
 
-##### Installation
-
-```bash
-pip3 install "sglang[srt]>=0.4.1.post6" --find-links https://flashinfer.ai/whl/cu124/torch2.4/flashinfer/
-```
-
-##### OpenAI Compatible Server
+安装ollama和拉取模型
 
 ```bash
-python3 -m sglang.launch_server --model internlm/internlm3-8b-instruct --trust-remote-code --chat-template internlm2-chat
-```
-
-##### OpenAI client
-
-```python3
-import openai
-client = openai.Client(
-    base_url="http://127.0.0.1:30000/v1", api_key="EMPTY")
-
-# Chat completion
-response = client.chat.completions.create(
-    model="default",
-    messages=[
-        {"role": "system", "content": "You are a helpful AI assistant"},
-        {"role": "user", "content": "List 3 countries and their capitals."},
-    ],
-    temperature=0,
-    max_tokens=64,
-)
-print(response)
-```
-
-#### Ollama inference
-
-install ollama and pull the model
-
-```bash
-# install ollama
+# 安装 ollama
 curl -fsSL https://ollama.com/install.sh | sh
-# pull the model
+# 拉取模型
 ollama pull internlm/internlm3-8b-instruct
-# install ollama-python
+# 安装python库
 pip install ollama
 ```
 
-inference code:
+推理代码
 
 ```python
 import ollama
@@ -331,15 +298,15 @@ for chunk in stream:
   print(chunk['message']['content'], end='', flush=True)
 ```
 
-#### vLLM inference
+#### vLLM 推理
 
-refer to [installation](https://docs.vllm.ai/en/latest/getting_started/installation/index.html) to install the latest code of vllm
+参考[安装文档](https://docs.vllm.ai/en/latest/getting_started/installation/index.html) 安装 vllm 最新代码
 
 ```python
 pip install vllm --pre --extra-index-url https://wheels.vllm.ai/nightly
 ```
 
-inference code:
+推理代码
 
 ```python
 from vllm import LLM, SamplingParams
@@ -364,13 +331,13 @@ outputs = llm.chat(prompts,
 print(outputs)
 ```
 
-### Thinking Mode
+### 深度思考模式
 
-#### Thinking Demo
+#### 深度思考 Demo
 
 <img src="https://github.com/InternLM/InternLM/blob/017ba7446d20ecc3b9ab8e7b66cc034500868ab4/assets/solve_puzzle.png?raw=true" width="400"/>
 
-#### Thinking system prompt
+#### 深度思考 system prompt
 
 ```python
 thinking_system_prompt = """You are an expert mathematician with extensive experience in mathematical competitions. You approach problems through systematic thinking and rigorous reasoning. When solving problems, follow these thought processes:
@@ -420,7 +387,7 @@ Focus on clear, logical progression of ideas and thorough explanation of your ma
 """
 ```
 
-#### Transformers inference
+#### Transformers 推理
 
 ```python
 import torch
@@ -437,7 +404,7 @@ model = AutoModelForCausalLM.from_pretrained(model_dir, trust_remote_code=True, 
 model = model.eval()
 messages = [
     {"role": "system", "content": thinking_system_prompt},
-    {"role": "user", "content": "Given the function\(f(x)=\mathrm{e}^{x}-ax - a^{3}\),\n(1) When \(a = 1\), find the equation of the tangent line to the curve \(y = f(x)\) at the point \((1,f(1))\).\n(2) If \(f(x)\) has a local minimum and the minimum value is less than \(0\), determine the range of values for \(a\)."},
+    {"role": "user", "content": "已知函数\(f(x)=\mathrm{e}^{x}-ax - a^{3}\)。\n（1）当\(a = 1\)时，求曲线\(y = f(x)\)在点\((1,f(1))\)处的切线方程；\n（2）若\(f(x)\)有极小值，且极小值小于\(0\)，求\(a\)的取值范围。"},
  ]
 tokenized_chat = tokenizer.apply_chat_template(messages, tokenize=True, add_generation_prompt=True, return_tensors="pt")
 generated_ids = model.generate(tokenized_chat, max_new_tokens=8192)
@@ -450,9 +417,9 @@ response = tokenizer.batch_decode(generated_ids)[0]
 print(response)
 ```
 
-#### LMDeploy inference
+#### LMDeploy 推理
 
-LMDeploy is a toolkit for compressing, deploying, and serving LLM.
+LMDeploy is a toolkit for compressing, deploying, and serving LLM, developed by the MMRazor and MMDeploy teams.
 
 ```bash
 pip install lmdeploy
@@ -467,36 +434,26 @@ chat_template_config = ChatTemplateConfig(model_name='internlm3')
 pipe = pipeline(model_dir, chat_template_config=chat_template_config)
 messages = [
         {"role": "system", "content": thinking_system_prompt},
-        {"role": "user", "content": "Given the function\(f(x)=\mathrm{e}^{x}-ax - a^{3}\),\n(1) When \(a = 1\), find the equation of the tangent line to the curve \(y = f(x)\) at the point \((1,f(1))\).\n(2) If \(f(x)\) has a local minimum and the minimum value is less than \(0\), determine the range of values for \(a\)."},
+        {"role": "user", "content": "已知函数\(f(x)=\mathrm{e}^{x}-ax - a^{3}\)。\n（1）当\(a = 1\)时，求曲线\(y = f(x)\)在点\((1,f(1))\)处的切线方程；\n（2）若\(f(x)\)有极小值，且极小值小于\(0\)，求\(a\)的取值范围。"},
 ]
 response = pipe(messages, gen_config=GenerationConfig(max_new_tokens=2048))
 print(response)
 ```
 
-#### SGLang inference
+#### Ollama 推理
 
-Installation
-
-```bash
-pip3 install "sglang[srt]>=0.4.1.post6" --find-links https://flashinfer.ai/whl/cu124/torch2.4/flashinfer/
-```
-
-For offline engine api usage, please refer to [Offline Engine API](https://docs.sglang.ai/backend/offline_engine_api.html)
-
-#### Ollama inference
-
-install ollama and pull the model
+安装ollama和拉取模型
 
 ```bash
-# install ollama
+# 安装 ollama
 curl -fsSL https://ollama.com/install.sh | sh
-# pull the model
+# 拉取模型
 ollama pull internlm/internlm3-8b-instruct
-# install ollama-python
+# 安装python库
 pip install ollama
 ```
 
-inference code:
+推理代码
 
 ```python
 import ollama
@@ -523,15 +480,15 @@ for chunk in stream:
   print(chunk['message']['content'], end='', flush=True)
 ```
 
-#### vLLM inference
+#### vLLM 推理
 
-refer to [installation](https://docs.vllm.ai/en/latest/getting_started/installation/index.html) to install the latest code of vllm
+参考[安装文档](https://docs.vllm.ai/en/latest/getting_started/installation/index.html) 安装 vllm 最新代码
 
-```python
+```bash
 pip install vllm --pre --extra-index-url https://wheels.vllm.ai/nightly
 ```
 
-inference code
+推理代码
 
 ```python
 from vllm import LLM, SamplingParams
@@ -544,7 +501,7 @@ prompts = [
     },
     {
         "role": "user",
-        "content": "Given the function\(f(x)=\mathrm{e}^{x}-ax - a^{3}\),\n(1) When \(a = 1\), find the equation of the tangent line to the curve \(y = f(x)\) at the point \((1,f(1))\).\n(2) If \(f(x)\) has a local minimum and the minimum value is less than \(0\), determine the range of values for \(a\)."
+        "content": "已知函数\(f(x)=\mathrm{e}^{x}-ax - a^{3}\)。\n（1）当\(a = 1\)时，求曲线\(y = f(x)\)在点\((1,f(1))\)处的切线方程；\n（2）若\(f(x)\)有极小值，且极小值小于\(0\)，求\(a\)的取值范围。"
     },
 ]
 outputs = llm.chat(prompts,
@@ -553,11 +510,11 @@ outputs = llm.chat(prompts,
 print(outputs)
 ```
 
-## License
+## 开源许可证
 
-Code and model weights are licensed under Apache-2.0.
+本仓库的代码和权重依照 Apache-2.0 协议开源。
 
-## Citation
+## 引用
 
 ```
 @misc{cai2024internlm2,
